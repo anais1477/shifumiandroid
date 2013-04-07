@@ -1,6 +1,5 @@
 package backend;
 
-import java.io.File;
 import java.util.Random;
 
 public class Computer extends Player {
@@ -39,13 +38,13 @@ public class Computer extends Player {
 	}
 	
 	@Override
-	public void save(File dir) {
+	public void save() {
 		// Nothing
 
 	}
 
 	@Override
-	public void restore(File dir) {
+	public void restore() {
 		// Nothing
 
 	}

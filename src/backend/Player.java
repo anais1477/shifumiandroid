@@ -6,6 +6,7 @@ public abstract class Player {
 	String name;
 	private int health;
 	private Attack attack;
+	File directory;
 	
 	public Player(){
 		this.health = 3;
@@ -45,6 +46,10 @@ public abstract class Player {
 		return null;
 	}
 	
+	public File getDirectory() {
+		return directory;
+	}
+	
 	public void reset(){
 		this.health = 3;
 		this.attack = null;
@@ -54,8 +59,8 @@ public abstract class Player {
 		return (this != null);
 	}
 	
-	public abstract void save(File dir);
+	public abstract void save();
 	
-	public abstract void restore(File dir);
+	public abstract void restore();
 	
 }

@@ -13,21 +13,24 @@ public class Human extends Player {
 	Statistics stats;
 	
 	public Human(String name){
+		super();
 		this.name = name;
 		stats = new Statistics(0, 0, 0, 0);		
 	}
 	
 	public Human(String name, File dir){
+		super();
 		this.name = name;
 		stats = new Statistics(0, 0, 0, 0);		
-		this.restore(dir);
+		this.directory = dir;
+		this.restore();
 	}
 	
 	public Statistics getStats() {
 		return stats;
 	}
 	
-	
+
 	@Override
 	public void reset() {
 		Statistics stat = getStats();
@@ -56,14 +59,14 @@ public class Human extends Player {
 	}
 	
 	@Override
-	public void save(File dir) {
+	public void save() {
 		Statistics stat = this.getStats();
 		
 		//Log.d("ANAIS", "stats to save="+ stat.toString());
 		
 		// File dir = context.getDir("DuellistesStats", Context.MODE_PRIVATE);
         try {
-        	File statsFile = new File(dir, this.getName() + "_stats.dat");
+        	File statsFile = new File(this.directory, this.getName() + "_stats.dat");
         	FileOutputStream fos = new FileOutputStream(statsFile);
 
             ObjectOutputStream oos = new ObjectOutputStream(fos);
@@ -79,13 +82,13 @@ public class Human extends Player {
 	}
 
 	@Override
-	public void restore(File dir) {
+	public void restore() {
 		stats = new Statistics(0, 0, 0, 0);		
 		
 		//File dir = context.getDir("DuellistesStats", Context.MODE_PRIVATE);
 		try 
 		{
-			File statsFile = new File(dir, this.getName() + "_stats.dat");
+			File statsFile = new File(this.directory, this.getName() + "_stats.dat");
         	FileInputStream fis = new FileInputStream(statsFile); 
 			
 			ObjectInputStream ois = new ObjectInputStream(fis);		

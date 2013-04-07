@@ -1,6 +1,5 @@
 package backend;
 
-import java.io.File;
 
 public class Arena {
 	private static Arena instanceUnique;
@@ -54,7 +53,7 @@ public class Arena {
 		return null;
 	}
 	
-	public Result round(File dir){
+	public Result round(){
 		Result result = Result.IN_PROGRESS;
 		
 		if(player2 instanceof Computer)
@@ -77,15 +76,15 @@ public class Arena {
 		{
 			result = Result.VICTORY_2;
 			reset();
-			player1.save(dir);
-			player2.save(dir);
+			player1.save();
+			player2.save();
 		}			
 		else if (player2.getHealth() <= 0)
 		{
 			result = Result.VICTORY_1;
 			reset();
-			player1.save(dir);
-			player2.save(dir);
+			player1.save();
+			player2.save();
 		}
 		
 		return result;
