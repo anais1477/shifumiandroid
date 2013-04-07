@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import android.util.Log;
 
 public class Human extends Player {
 	Statistics stats;
@@ -16,6 +15,12 @@ public class Human extends Player {
 	public Human(String name){
 		this.name = name;
 		stats = new Statistics(0, 0, 0, 0);		
+	}
+	
+	public Human(String name, File dir){
+		this.name = name;
+		stats = new Statistics(0, 0, 0, 0);		
+		this.restore(dir);
 	}
 	
 	public Statistics getStats() {
@@ -54,7 +59,7 @@ public class Human extends Player {
 	public void save(File dir) {
 		Statistics stat = this.getStats();
 		
-		Log.d("ANAIS", "stats to save="+ stat.toString());
+		//Log.d("ANAIS", "stats to save="+ stat.toString());
 		
 		// File dir = context.getDir("DuellistesStats", Context.MODE_PRIVATE);
         try {
@@ -87,14 +92,14 @@ public class Human extends Player {
 			try {
 				stats = (Statistics)ois.readObject();
 			} catch (ClassNotFoundException e) {
-				Log.e("erreur","erreur de lecture du fichier de sauvegarde:" + e.getMessage());
+				//Log.e("erreur","erreur de lecture du fichier de sauvegarde:" + e.getMessage());
 			}
 			ois.close();
 			fis.close();
 		} 
 		catch (IOException e) 
 		{
-			Log.i("InfoRestore","Joueur pas encore créé, donc stats mis à zéro");
+			//Log.i("InfoRestore","Joueur pas encore créé, donc stats mis à zéro");
 		}
 
 	}

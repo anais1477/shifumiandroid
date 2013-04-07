@@ -88,8 +88,6 @@ public class Arena {
 			player2.save(dir);
 		}
 		
-		player1.setAttack(null);
-		player1.setAttack(null);
 		return result;
 	}
 	

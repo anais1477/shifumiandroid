@@ -7,42 +7,63 @@ public class TestGame {
 		Arena a = Arena.getInstance();
 		Human ja = new Human("anais");
 		Computer jb = new Computer();
-		//ja.restore(ja);
+
+	    String curDir = System.getProperty("user.dir");
+	    System.out.println ("Le répertoire courant est: "+curDir);
+		File dir = new File(curDir+"/");
+		
+		ja.restore(dir);
 		a.setPlayer1(ja);
 		a.setPlayer2(jb);
-		File dir = new File("");
-		ja.setAttack(Attack.POWERFUL);
-		System.out.println(a.round(dir));
 		
-		System.out.println(ja.getStats());
+		ja.setAttack(Attack.POWERFUL);
+		System.out.println("Joueur A = "+ja.getAttack());
+		System.out.println(a.round(dir));
+		System.out.println("\nJoueur B = "+jb.getAttack());
 		System.out.println("Joueur A = "+ja.getHealth()+"\nJoueur B = "+jb.getHealth());
+		System.out.println(ja.getStats());
+		
 
 		ja.setAttack(Attack.NORMAL);
+		System.out.println("Joueur A = "+ja.getAttack());
 		System.out.println(a.round(dir));
-		System.out.println(ja.getStats());
+		System.out.println("\nJoueur B = "+jb.getAttack());
 		System.out.println("Joueur A = "+ja.getHealth()+"\nJoueur B = "+jb.getHealth());
+		System.out.println(ja.getStats());
 		
 		ja.setAttack(Attack.NORMAL);
+		System.out.println("Joueur A = "+ja.getAttack());
 		System.out.println(a.round(dir));
-		System.out.println(ja.getStats());
+		System.out.println("\nJoueur B = "+jb.getAttack());
 		System.out.println("Joueur A = "+ja.getHealth()+"\nJoueur B = "+jb.getHealth());
+		System.out.println(ja.getStats());
+		
+		ja.setAttack(Attack.SUBTILE);
+		System.out.println("Joueur A = "+ja.getAttack());
+		System.out.println(a.round(dir));
+		System.out.println("\nJoueur B = "+jb.getAttack());
+		System.out.println("Joueur A = "+ja.getHealth()+"\nJoueur B = "+jb.getHealth());
+		System.out.println(ja.getStats());
+		
 		ja.setAttack(Attack.NORMAL);
+		System.out.println("Joueur A = "+ja.getAttack());
 		System.out.println(a.round(dir));
-		System.out.println(ja.getStats());
-		System.out.println(jb.getStats());
+		System.out.println("\nJoueur B = "+jb.getAttack());
 		System.out.println("Joueur A = "+ja.getHealth()+"\nJoueur B = "+jb.getHealth());
-		ja.setAttack(Attack.NORMAL);
+		System.out.println(ja.getStats());
+		
+		ja.setAttack(Attack.SUBTILE);
+		System.out.println("Joueur A = "+ja.getAttack());
 		System.out.println(a.round(dir));
-		System.out.println(ja.getStats());
+		System.out.println("\nJoueur B = "+jb.getAttack());
 		System.out.println("Joueur A = "+ja.getHealth()+"\nJoueur B = "+jb.getHealth());
-		ja.setAttack(Attack.NORMAL);
-		jb.setAttack(Attack.SUBTILE);
+		System.out.println(ja.getStats());
+		
+		ja.setAttack(Attack.POWERFUL);
+		System.out.println("Joueur A = "+ja.getAttack());
 		System.out.println(a.round(dir));
-		System.out.println(ja.getStats());
+		System.out.println("\nJoueur B = "+jb.getAttack());
 		System.out.println("Joueur A = "+ja.getHealth()+"\nJoueur B = "+jb.getHealth());
-		ja.setAttack(Attack.NORMAL);
-		System.out.println(a.round(dir));
 		System.out.println(ja.getStats());
-		System.out.println("Joueur A = "+ja.getHealth()+"\nJoueur B = "+jb.getHealth());
 	}
 }
