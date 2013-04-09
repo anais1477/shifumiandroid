@@ -2,6 +2,8 @@ package backend;
 
 import java.io.File;
 
+/*************************************************COOMENNNNNTAIIIIIREEEEE*/
+
 public class TestGame {
 	public static void main(String[] args) {
 		Arena a = Arena.getInstance();
