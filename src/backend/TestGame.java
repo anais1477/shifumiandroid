@@ -2,13 +2,12 @@ package backend;
 
 import java.io.File;
 
-/*************************************************PORTABLE - - COOMENNNNNTAIIIIIREEEEE*/
 
 public class TestGame {
 	public static void main(String[] args) {
 		Arena a = Arena.getInstance();
 		String curDir = System.getProperty("user.dir");
-	    System.out.println ("Le répertoire courant est: "+curDir);
+	    System.out.println ("Le rï¿½pertoire courant est: "+curDir);
 		File dir = new File(curDir+"/");
 		
 		Human ja = new Human("anais", dir);
