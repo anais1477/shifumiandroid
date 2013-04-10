@@ -1,6 +1,5 @@
 package backend;
 
-
 public class Arena {
 	private static Arena instanceUnique;
 	private Player player1;

@@ -2,7 +2,7 @@ package backend;
 
 import java.io.File;
 
-/*************************************************COOMENNNNNTAIIIIIREEEEE*/
+/*************************************************PORTABLE - - COOMENNNNNTAIIIIIREEEEE*/
 
 public class TestGame {
 	public static void main(String[] args) {
