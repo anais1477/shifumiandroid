@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/accueil" android:title="Accueil" android:icon="@drawable/ic_menu_home" ></item>
+	<item android:id="@+id/stats_menu" android:title="Statistiques" android:icon="@drawable/ic_menu_friendslist" ></item>
+	<item android:id="@+id/quitter"   android:title="Quitter" android:icon="@drawable/ic_menu_close_clear_cancel" ></item>
+</menu>

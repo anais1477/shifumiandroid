@@ -4,7 +4,7 @@ import java.io.File;
 
 public class TestGame {
 	public static void main(String[] args) {
-		Arena a = Arena.getInstance();
+		/*Arena a = Arena.getInstance();
 		String curDir = System.getProperty("user.dir");
 	    System.out.println ("Le répertoire courant est: "+curDir);
 		File dir = new File(curDir+"/");
@@ -64,6 +64,6 @@ public class TestGame {
 		System.out.println(a.round());
 		System.out.println("\nJoueur B = "+jb.getAttack());
 		System.out.println("Joueur A = "+ja.getHealth()+"\nJoueur B = "+jb.getHealth());
-		System.out.println(ja.getStats());
+		System.out.println(ja.getStats());*/
 	}
 }

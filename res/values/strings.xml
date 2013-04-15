@@ -4,5 +4,31 @@
     <string name="app_name">Duellistes_V2</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    <string name="btn_solo">Solo</string>
+    <string name="btn_multi">Multi</string>
+    <string name="btn_quit">Quit</string>
+    <string name="btn_tournament">Tournament</string>
+    <string name="txt_player">Player 1</string>
+    <string name="txt_nbFights">0</string>
+    <string name="txt_nbVic">0</string>
+    <string name="txt_nbVicFollowed">0</string>
+    <string name="txt_nbVicFollowedRec">0</string>
+    <string name="txt_nbVicFollowed2">0</string>
+    <string name="txt_nbVic2">0</string>
+    <string name="txt_nbFights2">0</string>
+    <string name="txt_nbVicFollowedRec2">0</string>
+    <string name="txt_player2">Player 2</string>
+    <string name="txt_chooseName">Choose your name</string>
+    <string name="editName"/>
+    <string name="btn_create">Create</string>
+    <string name="txt_fight">Player 1 VS Player 2</string>
+    <string name="btn_normalAttack">Normal</string>
+    <string name="btn_subtileAttack">Subtle</string>
+    <string name="btn_powerfulAttack">Powerful</string>
+    <string name="txt_hpJ1">3</string>
+    <string name="txt_hpJ2">3</string>
+    <string name="txt_results">Results</string>
+    <string name="txt_resultsFight">Winner</string>
+    <string name="howToPlay">How To play</string>
 
 </resources>
