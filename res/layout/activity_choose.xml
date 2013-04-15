@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseActivity" 
+    >
+
+    <TextView
+        android:id="@+id/txt_player"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+        android:gravity="center"
+        android:padding="5dip"
+        android:text="@string/txt_player"
+        android:textSize="20sp" 
+        android:background="#265494"/>
+
+	 <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"
+    android:layout_below="@id/txt_player"/>
+	 
+    <Button
+        android:id="@+id/createPlayer"
+        android:background="@android:color/transparent"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_player"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dip"
+        android:layout_marginBottom="35dip"
+        android:text="Créer un nouveau joueur"
+/>
+    
+    <ImageView
+        android:id="@+id/imageAdd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/createPlayer"
+        android:layout_below="@id/txt_player"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_menu_add"
+        android:contentDescription="image2"/>
+    
+     <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"
+    android:layout_below="@id/createPlayer"/>
+
+    <ListView
+        android:id="@+id/listNames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dip"
+        android:layout_below="@id/createPlayer" 
+        android:background="#7EB1F7">
+    </ListView>
+    
+     <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"
+    android:layout_below="@id/listNames"/>
+
+</RelativeLayout>
