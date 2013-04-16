@@ -1,4 +1,4 @@
-package fr.projet.duellistes;
+package fr.duellistes.android;
 
 import android.app.Activity;
 import android.content.Intent;

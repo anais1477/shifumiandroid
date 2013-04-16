@@ -1,4 +1,4 @@
-package backend;
+package fr.duellistes.backend;
 
 public class Arena {
 	private static Arena instanceUnique;

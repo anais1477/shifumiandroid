@@ -1,7 +1,14 @@
-package fr.projet.duellistes;
+package fr.duellistes.android;
 
 
 import java.io.File;
+
+import fr.duellistes.backend.Arena;
+import fr.duellistes.backend.Attack;
+import fr.duellistes.backend.Computer;
+import fr.duellistes.backend.Human;
+import fr.duellistes.backend.Player;
+import fr.duellistes.backend.Result;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -17,12 +24,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-import backend.Arena;
-import backend.Attack;
-import backend.Computer;
-import backend.Human;
-import backend.Player;
-import backend.Result;
 
 public class AreneActivity extends Activity {
 	private Attack attack1;
@@ -95,7 +96,7 @@ public class AreneActivity extends Activity {
 		attack2 = null;
 		updatePv(j1, j2);	
 				
-		TextView attaque = (TextView) findViewById(R.id.txt_fight);
+		TextView attaque = (TextView) findViewById(R.id.txt_resultsFight);
 		CharSequence old = attaque.getText();
 		attaque.setText(old + "\n"
 				+ j1.getName() +" : "+j1.getAttack()+ "          VS             "+j2.getName()+" : "+ j2.getAttack()+"\n" 

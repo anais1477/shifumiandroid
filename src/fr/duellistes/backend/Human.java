@@ -1,4 +1,4 @@
-package backend;
+package fr.duellistes.backend;
 
 import java.io.File;
 import java.io.FileInputStream;

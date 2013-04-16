@@ -1,7 +1,9 @@
-package fr.projet.duellistes;
+package fr.duellistes.android;
 
 import java.io.File;
 import java.util.ArrayList;
+
+import fr.duellistes.backend.Human;
 
 import android.app.Activity;
 import android.content.Context;
@@ -17,7 +19,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import backend.Human;
 
 public class CreationActivity extends Activity {
 	private String nameJ1;

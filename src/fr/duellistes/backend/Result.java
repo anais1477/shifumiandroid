@@ -1,4 +1,4 @@
-package backend;
+package fr.duellistes.backend;
 
 public enum Result {
 	VICTORY_1,
