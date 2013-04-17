@@ -7,7 +7,7 @@
     <string name="btn_solo">Solo</string>
     <string name="btn_multi">Multi</string>
     <string name="btn_quit">Quit</string>
-    <string name="btn_tournament">Tournament</string>
+    <string name="btn_online">Online</string>
     <string name="txt_player">Player 1</string>
     <string name="txt_nbFights">0</string>
     <string name="txt_nbVic">0</string>

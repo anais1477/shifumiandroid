@@ -43,6 +43,7 @@ public class ChooseActivity extends Activity {
 			    if (!files[i].isDirectory() && files[i].getName().contains("_stats.dat")); 
 			    {
 			       tmp = files[i].getName().split("_");
+			       Log.d("ANAIS", "nme"+tmp[0]);
 			       namesList.add(tmp[0]);	
 			    }
 			}

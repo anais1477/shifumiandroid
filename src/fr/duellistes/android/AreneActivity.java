@@ -180,12 +180,12 @@ public class AreneActivity extends Activity {
 	
 	public void updatePv(Player j1, Player j2){
 		Resources res = getResources();
-	    String vieJ1 = res.getString(R.string.txt_hpJ1, j1.getName(), j1.getHealth());
-	    String vieJ2 = res.getString(R.string.txt_hpJ2, j2.getName(), j2.getHealth());
+	    String hpJ1 = res.getString(R.string.txt_hpJ1, j1.getName(), j1.getHealth());
+	    String hpJ2 = res.getString(R.string.txt_hpJ2, j2.getName(), j2.getHealth());
 	    TextView vue1 = (TextView)findViewById(R.id.txt_hpJ1);
 	    TextView vue2 = (TextView)findViewById(R.id.txt_hpJ2);
-	    vue1.setText(vieJ1);
-	    vue2.setText(vieJ2);
+	    vue1.setText(hpJ1);
+	    vue2.setText(hpJ2);
 	    
 	    if(attack1 == null)
 	    {
@@ -227,8 +227,10 @@ public class AreneActivity extends Activity {
 	    		startActivity(backIntent);
 	    		return true;
 		    case R.id.stats_menu:
+		    	Log.d("ANAIS","ok0");
 		    	Arena a = Arena.getInstance();
 		    	Intent statIntent = new Intent(AreneActivity.this,StatsActivity.class);
+		    	Log.d("ANAIS","okbis");
 		    	statIntent.putExtra("NbCombats", a.getPlayer1().getStats().getNbTotalFights());
 		    	statIntent.putExtra("NbVic", a.getPlayer1().getStats().getNbTotalVictories());
 		    	statIntent.putExtra("NbVicSuivies", a.getPlayer1().getStats().getNbFollowingVictories());
@@ -242,6 +244,7 @@ public class AreneActivity extends Activity {
 			    	statIntent.putExtra("NbVicSuiviesRec2", a.getPlayer2().getStats().getNbBestFollowingVictories());
 			    	statIntent.putExtra("nameJ2", a.getPlayer2().getName());
 		    	}
+		    	Log.d("ANAIS","ok1");
 		 	    startActivity(statIntent);
 		        return true;
 		    case R.id.quitter:

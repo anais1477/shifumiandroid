@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
+import android.util.Log;
+
 
 public class Human extends Player {
 	Statistics stats;
@@ -63,8 +65,7 @@ public class Human extends Player {
 		Statistics stat = this.getStats();
 		
 		//Log.d("ANAIS", "stats to save="+ stat.toString());
-		
-		// File dir = context.getDir("DuellistesStats", Context.MODE_PRIVATE);
+
         try {
         	File statsFile = new File(this.directory, this.getName() + "_stats.dat");
         	FileOutputStream fos = new FileOutputStream(statsFile);
@@ -85,7 +86,6 @@ public class Human extends Player {
 	public void restore() {
 		stats = new Statistics(0, 0, 0, 0);		
 		
-		//File dir = context.getDir("DuellistesStats", Context.MODE_PRIVATE);
 		try 
 		{
 			File statsFile = new File(this.directory, this.getName() + "_stats.dat");

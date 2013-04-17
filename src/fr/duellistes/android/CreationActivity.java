@@ -32,11 +32,12 @@ public class CreationActivity extends Activity {
 			
 			String[] tmp;
 			File dir = getApplicationContext().getDir("DuellistesStats", Context.MODE_PRIVATE);
+			
 			File[] files = dir.listFiles();
 			
 			for (int i=0; i< files.length; i++) {
 			    if (!files[i].isDirectory() && files[i].getName().contains("_stats.dat")); 
-			    {
+			    {			    	
 			       tmp = files[i].getName().split("_");
 			       namesList.add(tmp[0]);	
 			    }
@@ -45,8 +46,7 @@ public class CreationActivity extends Activity {
 			Bundle extras = getIntent().getExtras(); 
 			int nbJoueurset = extras.getInt("nbJoueurset");
 			Boolean multi = extras.getBoolean("multi");
-			nameJ1 = extras.getString("nameJ1");		
-			
+			nameJ1 = extras.getString("nameJ1");	
 			
 		    
 		    
@@ -80,7 +80,7 @@ public class CreationActivity extends Activity {
 				else if(nbJoueurset == 1 && multi == true)
 				{
 					nameJ2 = sNouveauJoueurText;
-					Log.i("ANAIS",nameJ1+nameJ2);
+					Log.d("ANAIS",nameJ1+nameJ2);
 					if(nameJ1.equals(nameJ2)){
 						Context context = getApplicationContext();
 						Toast toast = Toast.makeText(context, "Le deuxième joueur ne peut pas être le même que le premier", Toast.LENGTH_LONG);
@@ -100,6 +100,7 @@ public class CreationActivity extends Activity {
 					}
 				}
 				else{
+					nameJ1 = sNouveauJoueurText;
 				    Intent areneIntent = new Intent(CreationActivity.this, AreneActivity.class);
 				    areneIntent.putExtra("nameJ1",sNouveauJoueurText);
 				    areneIntent.putExtra("multi",multi);

@@ -1,16 +1,21 @@
 package fr.duellistes.android;
 
+import fr.duellistes.backend.Arena;
+import fr.duellistes.backend.Player;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
 public class StatsActivity extends Activity {
-
+	private Player j1;
+	private Player j2;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -20,20 +25,35 @@ public class StatsActivity extends Activity {
 		if (getIntent().getBooleanExtra("EXIT", false)) {
 	         finish();
 	    }
+		Log.d("ANAIS","ok2");
+		Arena a = Arena.getInstance();	
+		j1 = a.getPlayer1();
+		j2 = a.getPlayer2();
+		
+		int nbFightsJ1 = j1.getStats().getNbTotalFights();
+		int nbVictoriesJ1 = j1.getStats().getNbTotalVictories();
+		int nbFollowingVictoriesJ1 = j1.getStats().getNbFollowingVictories();
+		int nbBestFollowingVictoriesJ1 = j1.getStats().getNbBestFollowingVictories();
+		
+		int nbFightsJ2 = j2.getStats().getNbTotalFights();
+		int nbVictoriesJ2 = j2.getStats().getNbTotalVictories();
+		int nbFollowingVictoriesJ2 = j2.getStats().getNbFollowingVictories();
+		int nbBestFollowingVictoriesJ2 = j2.getStats().getNbBestFollowingVictories();
+		
 		
 		Bundle extras = getIntent().getExtras(); 
 		Boolean multi = extras.getBoolean("multi");
-		int NbCombats = extras.getInt("NbCombats");
+		/*int NbCombats = extras.getInt("NbCombats");
 		int NbVic = extras.getInt("NbVic");
 		int NbVicSuivies = extras.getInt("NbVicSuivies");
-		int NbVicSuiviesRec = extras.getInt("NbVicSuiviesRec");
+		int NbVicSuiviesRec = extras.getInt("NbVicSuiviesRec");*/
 		String nameJ1 = extras.getString("nameJ1");
 		
 		Resources res = getResources();
-	    String sNbCombats = res.getString(R.string.txt_nbFights, NbCombats);
-	    String sNbVic = res.getString(R.string.txt_nbVic, NbVic);
-	    String sNbVicSuivies = res.getString(R.string.txt_nbVicFollowed, NbVicSuivies);
-	    String sNbVicSuiviesRec = res.getString(R.string.txt_nbVicFollowedRec, NbVicSuiviesRec);
+	    String sNbCombats = res.getString(R.string.txt_nbFights, nbFightsJ1);
+	    String sNbVic = res.getString(R.string.txt_nbVic, nbVictoriesJ1);
+	    String sNbVicSuivies = res.getString(R.string.txt_nbVicFollowed, nbFollowingVictoriesJ1);
+	    String sNbVicSuiviesRec = res.getString(R.string.txt_nbVicFollowedRec, nbBestFollowingVictoriesJ1);
 	    TextView vue0 = (TextView)findViewById(R.id.txt_player);
 	    TextView vue1 = (TextView)findViewById(R.id.txt_nbFights);
 	    TextView vue2 = (TextView)findViewById(R.id.txt_nbVic);
@@ -54,16 +74,16 @@ public class StatsActivity extends Activity {
 	    
 	    if(multi){
 
-			int NbCombats2 = extras.getInt("NbCombats2");
+			/*int NbCombats2 = extras.getInt("NbCombats2");
 			int NbVic2 = extras.getInt("NbVic2");
 			int NbVicSuivies2 = extras.getInt("NbVicSuivies2");
-			int NbVicSuiviesRec2 = extras.getInt("NbVicSuiviesRec2");
+			int NbVicSuiviesRec2 = extras.getInt("NbVicSuiviesRec2");*/
 			String nameJ2 = extras.getString("nameJ2");
 			
-		    String sNbCombats2 = res.getString(R.string.txt_nbFights2, NbCombats2);
-		    String sNbVic2 = res.getString(R.string.txt_nbVic2, NbVic2);
-		    String sNbVicSuivies2 = res.getString(R.string.txt_nbVicFollowed2, NbVicSuivies2);
-		    String sNbVicSuiviesRec2 = res.getString(R.string.txt_nbVicFollowedRec2, NbVicSuiviesRec2);
+		    String sNbCombats2 = res.getString(R.string.txt_nbFights2, nbFightsJ2);
+		    String sNbVic2 = res.getString(R.string.txt_nbVic2, nbVictoriesJ2);
+		    String sNbVicSuivies2 = res.getString(R.string.txt_nbVicFollowed2, nbFollowingVictoriesJ2);
+		    String sNbVicSuiviesRec2 = res.getString(R.string.txt_nbVicFollowedRec2, nbBestFollowingVictoriesJ2);
 		    
 		    vue5bis.setText(nameJ2);
 		    vue5.setText(sNbCombats2);

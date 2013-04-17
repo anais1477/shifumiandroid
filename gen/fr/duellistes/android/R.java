@@ -27,11 +27,11 @@ public final class R {
         public static final int btn_create=0x7f070010;
         public static final int btn_multi=0x7f070013;
         public static final int btn_normalAttack=0x7f070001;
+        public static final int btn_online=0x7f070014;
         public static final int btn_powerfulAttack=0x7f070003;
         public static final int btn_quit=0x7f070015;
         public static final int btn_solo=0x7f070012;
         public static final int btn_subtileAttack=0x7f070002;
-        public static final int btn_tournament=0x7f070014;
         public static final int createPlayer=0x7f07000b;
         public static final int delete=0x7f070021;
         public static final int editName=0x7f07000f;
@@ -82,11 +82,11 @@ public final class R {
         public static final int btn_create=0x7f040013;
         public static final int btn_multi=0x7f040004;
         public static final int btn_normalAttack=0x7f040015;
+        public static final int btn_online=0x7f040006;
         public static final int btn_powerfulAttack=0x7f040017;
         public static final int btn_quit=0x7f040005;
         public static final int btn_solo=0x7f040003;
         public static final int btn_subtileAttack=0x7f040016;
-        public static final int btn_tournament=0x7f040006;
         public static final int editName=0x7f040012;
         public static final int hello_world=0x7f040001;
         public static final int howToPlay=0x7f04001c;

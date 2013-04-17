@@ -15,7 +15,7 @@
     	android:layout_gravity="center"    	
  		android:minWidth="200dp" 
  		android:minHeight="70dp" 
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true"
         />
 
@@ -29,21 +29,21 @@
     	android:layout_gravity="center"   	
  		android:minWidth="200dp" 
  		android:minHeight="70dp" 
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/btn_solo" />
     
     <Button
-        android:id="@+id/btn_tournament"
+        android:id="@+id/btn_online"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_tournament"
+        android:text="@string/btn_online"
         android:gravity="center"
         android:textSize="24sp"
     	android:layout_gravity="center"   	
  		android:minWidth="200dp" 
  		android:minHeight="70dp" 
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/btn_multi" />
     
@@ -57,8 +57,8 @@
     	android:layout_gravity="center"   	
  		android:minWidth="200dp" 
  		android:minHeight="70dp" 
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/btn_tournament" />
+        android:layout_below="@id/btn_online" />
 
 </RelativeLayout>
