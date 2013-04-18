@@ -1,5 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <item android:id="@+id/quitter"   android:title="Quitter" android:icon="@drawable/ic_menu_close_clear_cancel" ></item>
+    <item android:id="@+id/setting"   android:title="Settings" android:icon="@drawable/ic_menu_close_clear_cancel" ></item>
+    <item android:id="@+id/quitter"   android:title="Quit" android:icon="@drawable/ic_menu_close_clear_cancel" ></item>
+
 
 </menu>

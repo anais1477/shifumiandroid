@@ -2,6 +2,7 @@ package fr.duellistes.android;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,7 +11,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class ModeActivity extends Activity {
-
+	MediaPlayer mp        = null;
+	 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -54,6 +56,13 @@ public class ModeActivity extends Activity {
 		    	startActivity(intent);
 			}
 		});
+		
+		if (mp != null) {
+            mp.reset();
+            mp.release();
+        }
+            mp = MediaPlayer.create(this, R.raw.twilight);
+            mp.start();
 	}
 
 	@Override
