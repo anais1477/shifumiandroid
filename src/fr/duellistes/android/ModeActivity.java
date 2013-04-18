@@ -11,7 +11,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class ModeActivity extends Activity {
-	MediaPlayer mp        = null;
+	MediaPlayer player        = null;
 	 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -56,15 +56,35 @@ public class ModeActivity extends Activity {
 		    	startActivity(intent);
 			}
 		});
-		
-		if (mp != null) {
-            mp.reset();
-            mp.release();
-        }
-            mp = MediaPlayer.create(this, R.raw.twilight);
-            mp.start();
+		if(player != null) {
+		    player.stop();
+		    player.release();
+		    player = null;
+		  }
+		player = MediaPlayer.create(this, R.raw.twilight);
+		player.start();
 	}
 
+	@Override
+	protected void onStop() {
+		super.onStop();
+	  /*if(player != null) {
+	    //player.stop();
+	    player.release();
+	    player = null;
+	  }*/
+	}
+	
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+	  if(player != null) {
+	    player.stop();
+	    player.release();
+	    player = null;
+	  }
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

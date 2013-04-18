@@ -18,37 +18,40 @@
         android:background="#1C2A57"
         
         />
-
-    <Button
+	<ImageView
         android:id="@+id/btn_normalAttack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_normalAttack"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:maxHeight="20dip"
+        android:src="@drawable/normal"
+        android:contentDescription="@string/btn_normalAttack"
         android:layout_marginLeft="25dip"
         android:layout_marginTop="5dip"
-        android:layout_below="@id/txt_fight"
-        />
-
-    <Button
+        android:layout_below="@id/txt_fight" />
+	
+	<ImageView
         android:id="@+id/btn_subtileAttack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_subtileAttack"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:maxHeight="10dip"
+        android:src="@drawable/subtile"
+        android:contentDescription="@string/btn_subtileAttack"
         android:layout_marginLeft="25dip"
         android:layout_marginTop="5dip"
         android:layout_toRightOf="@id/btn_normalAttack"
         android:layout_below="@id/txt_fight" />
-
-    <Button
+	
+	<ImageView
         android:id="@+id/btn_powerfulAttack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_powerfulAttack"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:maxHeight="20dip"
+        android:src="@drawable/powerful" 
+        android:contentDescription="@string/btn_powerfulAttack"
         android:layout_marginLeft="25dip"
         android:layout_marginTop="5dip"
         android:layout_toRightOf="@id/btn_subtileAttack"
-        android:layout_below="@id/txt_fight" />
-    
+        android:layout_below="@id/txt_fight"/>
    
     
     <ImageView

@@ -23,6 +23,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class AreneActivity extends Activity {
@@ -162,9 +163,9 @@ public class AreneActivity extends Activity {
 		if(multi)
 			a.getPlayer2().save();
 		
-		Button attckNormale = (Button) findViewById(R.id.btn_normalAttack);
-		Button attckSubtile = (Button) findViewById(R.id.btn_subtileAttack);
-		Button attckPuissante = (Button) findViewById(R.id.btn_powerfulAttack);
+		ImageView  attckNormale = (ImageView ) findViewById(R.id.btn_normalAttack);
+		ImageView  attckSubtile = (ImageView ) findViewById(R.id.btn_subtileAttack);
+		ImageView  attckPuissante = (ImageView ) findViewById(R.id.btn_powerfulAttack);
 		
 		attckNormale.setOnClickListener(attackNormale);
 		attckPuissante.setOnClickListener(attackPuissante);

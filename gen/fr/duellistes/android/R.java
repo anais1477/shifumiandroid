@@ -19,11 +19,15 @@ public final class R {
         public static final int ic_menu_friendslist=0x7f020005;
         public static final int ic_menu_help=0x7f020006;
         public static final int ic_menu_home=0x7f020007;
-        public static final int icone=0x7f020008;
-        public static final int icone_duel=0x7f020009;
+        public static final int ic_menu_preferences=0x7f020008;
+        public static final int icone=0x7f020009;
+        public static final int icone_duel=0x7f02000a;
+        public static final int normal=0x7f02000b;
+        public static final int powerful=0x7f02000c;
+        public static final int subtile=0x7f02000d;
     }
     public static final class id {
-        public static final int accueil=0x7f080023;
+        public static final int accueil=0x7f080022;
         public static final int btn_create=0x7f080010;
         public static final int btn_multi=0x7f080013;
         public static final int btn_normalAttack=0x7f080001;
@@ -33,17 +37,16 @@ public final class R {
         public static final int btn_solo=0x7f080012;
         public static final int btn_subtileAttack=0x7f080002;
         public static final int createPlayer=0x7f08000b;
-        public static final int delete=0x7f080022;
+        public static final int delete=0x7f080021;
         public static final int editName=0x7f08000f;
         public static final int howToPlay=0x7f080011;
         public static final int image1=0x7f080004;
         public static final int image2=0x7f080007;
         public static final int imageAdd=0x7f08000c;
         public static final int listNames=0x7f08000d;
-        public static final int menu_settings=0x7f080021;
-        public static final int quitter=0x7f080020;
-        public static final int setting=0x7f08001f;
-        public static final int stats_menu=0x7f080024;
+        public static final int menu_settings=0x7f080020;
+        public static final int quitter=0x7f08001f;
+        public static final int stats_menu=0x7f080023;
         public static final int txt_chooseName=0x7f08000e;
         public static final int txt_fight=0x7f080000;
         public static final int txt_hpJ1=0x7f080005;
@@ -68,6 +71,7 @@ public final class R {
         public static final int activity_how_to_play=0x7f030003;
         public static final int activity_mode=0x7f030004;
         public static final int activity_stats=0x7f030005;
+        public static final int arena=0x7f030006;
     }
     public static final class menu {
         public static final int activity_choose=0x7f070000;
