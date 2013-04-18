@@ -174,8 +174,6 @@ public class AreneActivity extends Activity {
 	    TextView vue3 = (TextView)findViewById(R.id.txt_fight);
 	    vue3.setText("Le combat commence !");	
 	    
-	    
-		
 	}
 	
 	public void updatePv(Player j1, Player j2){
@@ -227,24 +225,22 @@ public class AreneActivity extends Activity {
 	    		startActivity(backIntent);
 	    		return true;
 		    case R.id.stats_menu:
-		    	Log.d("ANAIS","ok0");
 		    	Arena a = Arena.getInstance();
 		    	Intent statIntent = new Intent(AreneActivity.this,StatsActivity.class);
-		    	Log.d("ANAIS","okbis");
-		    	statIntent.putExtra("NbCombats", a.getPlayer1().getStats().getNbTotalFights());
+		    	
+		    	/*statIntent.putExtra("NbCombats", a.getPlayer1().getStats().getNbTotalFights());
 		    	statIntent.putExtra("NbVic", a.getPlayer1().getStats().getNbTotalVictories());
 		    	statIntent.putExtra("NbVicSuivies", a.getPlayer1().getStats().getNbFollowingVictories());
-		    	statIntent.putExtra("NbVicSuiviesRec", a.getPlayer1().getStats().getNbBestFollowingVictories());
+		    	statIntent.putExtra("NbVicSuiviesRec", a.getPlayer1().getStats().getNbBestFollowingVictories());*/
 		    	statIntent.putExtra("multi",multi);
 		    	statIntent.putExtra("nameJ1", a.getPlayer1().getName());
-		    	if(multi){
+		    	/*if(multi){
 			    	statIntent.putExtra("NbCombats2", a.getPlayer2().getStats().getNbTotalFights());
 			    	statIntent.putExtra("NbVic2", a.getPlayer2().getStats().getNbTotalVictories());
 			    	statIntent.putExtra("NbVicSuivies2", a.getPlayer2().getStats().getNbFollowingVictories());
 			    	statIntent.putExtra("NbVicSuiviesRec2", a.getPlayer2().getStats().getNbBestFollowingVictories());
 			    	statIntent.putExtra("nameJ2", a.getPlayer2().getName());
-		    	}
-		    	Log.d("ANAIS","ok1");
+		    	}*/
 		 	    startActivity(statIntent);
 		        return true;
 		    case R.id.quitter:

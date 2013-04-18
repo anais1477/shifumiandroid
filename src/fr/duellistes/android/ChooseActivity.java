@@ -47,9 +47,7 @@ public class ChooseActivity extends Activity {
 			       namesList.add(tmp[0]);	
 			    }
 			}
-			
-			
-			
+					
 			
 			Resources res = getResources();
 			String title;
@@ -151,8 +149,7 @@ public class ChooseActivity extends Activity {
 		
 		if (getIntent().getBooleanExtra("EXIT", false)) {
 	         finish();
-	    }
-		
+	    }		
 		
 		Bundle extras = getIntent().getExtras(); 
 		if(extras != null){

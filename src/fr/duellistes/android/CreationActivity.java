@@ -110,9 +110,7 @@ public class CreationActivity extends Activity {
 				}
 			}
 		}
-	};
-	
-	
+	};	
 
 	
 	@Override
