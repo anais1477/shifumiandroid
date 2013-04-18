@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/txt_player"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_player"
+        android:textSize="20sp"
+        android:padding="5dip"
+        android:gravity="center"
+        android:background="#265494"
+        />
+    <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"
+    android:layout_below="@id/txt_player"/>
+    
+    <TextView
+        android:id="@+id/txt_chooseName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_chooseName"
+        android:textSize="18sp"
+        android:layout_marginTop="50dip"
+        android:gravity="center"
+         android:layout_below="@id/txt_player"
+        />
+   
+   <EditText
+         android:id="@+id/editName"
+		 android:layout_width="fill_parent"
+		 android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+         android:layout_below="@id/txt_chooseName"
+		 android:hint="@string/editName"  />
+   
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:text="@string/btn_create"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dip"
+        android:layout_below="@id/editName" />
+    
+   
+</RelativeLayout>

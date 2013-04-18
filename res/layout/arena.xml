@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+        android:background="#4480D4" >
+
+    <TextView
+        android:id="@+id/txt_fight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_fight"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:background="#1C2A57"
+        
+        />
+
+    <Button
+        android:id="@+id/btn_normalAttack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_normalAttack"
+        android:layout_marginLeft="25dip"
+        android:layout_marginTop="5dip"
+        android:layout_below="@id/txt_fight"
+        />
+
+    <Button
+        android:id="@+id/btn_subtileAttack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_subtileAttack"
+        android:layout_marginLeft="25dip"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@id/btn_normalAttack"
+        android:layout_below="@id/txt_fight" />
+
+    <Button
+        android:id="@+id/btn_powerfulAttack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_powerfulAttack"
+        android:layout_marginLeft="25dip"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@id/btn_subtileAttack"
+        android:layout_below="@id/txt_fight" />
+    
+   
+    
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/btn_powerfulAttack"
+        android:layout_marginTop="10dip"
+        android:src="@drawable/android_default" 
+        android:contentDescription="image1"/>
+    
+    <TextView
+        android:id="@+id/txt_hpJ1"
+        android:layout_width="130dip"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:text="@string/txt_hpJ1"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/btn_powerfulAttack"
+        android:layout_marginTop="5dip"
+        android:gravity="left"
+        android:layout_toRightOf="@id/image1"
+        android:paddingTop="5dp"
+        />
+    
+    
+     
+    <TextView
+        android:id="@+id/txt_hpJ2"
+        android:layout_width="130dip"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:text="@string/txt_hpJ2"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/btn_powerfulAttack"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/txt_hpJ1"
+        android:paddingTop="5dp"
+        />
+    
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/btn_powerfulAttack"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/android_bleu" 
+        android:contentDescription="image"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/txt_hpJ2"/>
+    
+     <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#FFFFFF"
+    android:layout_below="@id/txt_hpJ1"/>
+    
+     <TextView
+        android:id="@+id/txt_results"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:text="@string/txt_results"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_below="@id/txt_hpJ1"
+        android:layout_marginTop="5dip"
+        android:gravity="center"
+        />
+    
+   
+    <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:layout_below="@id/txt_results"
+	        android:layout_marginTop="5dip"
+	        android:background="@android:color/white"
+    >
+    <TextView
+        android:id="@+id/txt_resultsFight"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/txt_resultsFight"
+        android:textColor="#000000"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/white"
+        />
+	</ScrollView>
+</RelativeLayout>

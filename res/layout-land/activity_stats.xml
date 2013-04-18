@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatsActivity" >
+
+    <TextView
+        android:id="@+id/txt_player"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"        
+        android:gravity="center"
+        android:text="@string/txt_player"
+        android:textSize="18sp" />
+    
+    <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"
+    android:layout_below="@id/txt_player"/>
+    
+    
+    <TextView
+        android:id="@+id/txt_nbFights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"       
+        android:layout_below="@id/txt_player"
+        android:text="@string/txt_nbFights" />
+    
+    <TextView
+        android:id="@+id/txt_nbVic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+         android:layout_below="@id/txt_nbFights"
+        android:text="@string/txt_nbVic" />
+    
+    <TextView
+        android:id="@+id/txt_nbVicFollowed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+         android:layout_below="@id/txt_nbVic"
+        android:text="@string/txt_nbVicFollowed" />
+    
+    <TextView
+        android:id="@+id/txt_nbVicFollowedRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+         android:layout_below="@id/txt_nbVicFollowed"
+        android:text="@string/txt_nbVicFollowedRec"
+        android:layout_marginBottom="100dip"    />
+    
+    
+    
+    
+    
+    
+    
+    <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp" 
+    android:background="@android:color/darker_gray"
+    android:layout_below="@id/txt_nbVicFollowedRec"/>
+    
+    
+    
+     <TextView
+        android:id="@+id/txt_player2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"    
+        android:gravity="center"    
+        android:text="@string/txt_player2"
+        android:layout_below="@id/txt_nbVicFollowedRec"
+        android:textSize="18sp" />
+    
+    <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"
+    android:layout_below="@id/txt_player2"/>
+    
+    
+    <TextView
+        android:id="@+id/txt_nbFights2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"       
+        android:layout_below="@id/txt_player2"
+        android:text="@string/txt_nbFights2" />
+    
+    <TextView
+        android:id="@+id/txt_nbVic2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+         android:layout_below="@id/txt_nbFights2"
+        android:text="@string/txt_nbVic2" />
+    
+    <TextView
+        android:id="@+id/txt_nbVicFollowed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+         android:layout_below="@id/txt_nbVic2"
+        android:text="@string/txt_nbVicFollowed2" />
+    
+    <TextView
+        android:id="@+id/txt_nbVicFollowedRec2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+         android:layout_below="@id/txt_nbVicFollowed2"
+        android:text="@string/txt_nbVicFollowedRec2" />
+
+</RelativeLayout>
