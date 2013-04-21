@@ -60,8 +60,7 @@
         android:layout_height="30dp"
         android:layout_below="@id/btn_powerfulAttack"
         android:layout_marginTop="10dip"
-        android:src="@drawable/android_default" 
-        android:contentDescription="image1"/>
+        android:src="@drawable/android_default" />
     
     <TextView
         android:id="@+id/txt_hpJ1"

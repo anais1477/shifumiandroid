@@ -38,15 +38,41 @@
          android:layout_below="@id/txt_chooseName"
 		 android:hint="@string/editName"  />
    
+   <TextView
+        android:id="@+id/txt_chooseImgChar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_chooseImgChar"
+        android:textSize="18sp"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+         android:layout_below="@id/editName"
+       />
+   
+   <ImageView
+         android:id="@+id/imgCharacter"
+		 android:layout_width="100dip"
+		 android:layout_height="100dip"
+        android:layout_marginTop="15dip"
+         android:layout_below="@id/txt_chooseImgChar"  />
+   
+   <Button
+        android:id="@+id/btn_imgChar"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:text="@string/btn_imgChar"
+        android:layout_marginTop="35dip"
+        android:layout_toRightOf="@id/imgCharacter"
+        android:layout_below="@id/txt_chooseImgChar" />
 
     <Button
         android:id="@+id/btn_create"
         android:layout_width="130dp"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:text="@string/btn_create"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dip"
-        android:layout_below="@id/editName" />
+        android:layout_marginTop="35dip"
+        android:layout_below="@id/btn_imgChar" />
     
    
 </RelativeLayout>

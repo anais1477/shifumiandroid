@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,7 +12,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class ModeActivity extends Activity {
-	MediaPlayer player        = null;
+	//MediaPlayer player;
 	 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -56,13 +57,32 @@ public class ModeActivity extends Activity {
 		    	startActivity(intent);
 			}
 		});
-		if(player != null) {
-		    player.stop();
+		
+		
+		/*if(player != null) {
+			Log.d("ANAIS", "Not null");
 		    player.release();
 		    player = null;
 		  }
-		player = MediaPlayer.create(this, R.raw.twilight);
-		player.start();
+		
+			Log.d("ANAIS", "Null");
+		player = MediaPlayer.create(this, R.raw.twilight);	*/	
+		Intent service = new Intent(this, BackgroundSoundService.class);
+		startService(service);
+		
+	}
+	
+	@Override
+	protected void onPause() {
+		super.onPause();
+		//player.pause();
+	}
+	
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		//player.start();
 	}
 
 	@Override
@@ -78,11 +98,13 @@ public class ModeActivity extends Activity {
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-	  if(player != null) {
+		Intent service = new Intent(this, BackgroundSoundService.class);
+		stopService(service);
+	  /*if(player != null) {
 	    player.stop();
 	    player.release();
 	    player = null;
-	  }
+	  }*/
 	}
 	
 	@Override

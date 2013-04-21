@@ -168,6 +168,7 @@ public class ChooseActivity extends Activity {
 	   Log.d("CDA", "onBackPressed Called");
 	   Intent backIntent = new Intent(ChooseActivity.this,ModeActivity.class);
 	   backIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+	   backIntent.putExtra("EXIT", false);
 	   startActivity(backIntent);
 	}
 

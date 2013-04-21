@@ -11,56 +11,69 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int android_bleu=0x7f020000;
-        public static final int android_default=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int ic_menu_add=0x7f020003;
-        public static final int ic_menu_close_clear_cancel=0x7f020004;
-        public static final int ic_menu_friendslist=0x7f020005;
-        public static final int ic_menu_help=0x7f020006;
-        public static final int ic_menu_home=0x7f020007;
-        public static final int ic_menu_preferences=0x7f020008;
-        public static final int icone=0x7f020009;
-        public static final int icone_duel=0x7f02000a;
-        public static final int normal=0x7f02000b;
-        public static final int powerful=0x7f02000c;
-        public static final int subtile=0x7f02000d;
+        public static final int abarai=0x7f020000;
+        public static final int ahri=0x7f020001;
+        public static final int android_bleu=0x7f020002;
+        public static final int android_default=0x7f020003;
+        public static final int byakuya=0x7f020004;
+        public static final int fiora=0x7f020005;
+        public static final int gothic=0x7f020006;
+        public static final int ic_launcher=0x7f020007;
+        public static final int ic_menu_add=0x7f020008;
+        public static final int ic_menu_close_clear_cancel=0x7f020009;
+        public static final int ic_menu_friendslist=0x7f02000a;
+        public static final int ic_menu_help=0x7f02000b;
+        public static final int ic_menu_home=0x7f02000c;
+        public static final int ic_menu_preferences=0x7f02000d;
+        public static final int ichigo=0x7f02000e;
+        public static final int icone=0x7f02000f;
+        public static final int icone_duel=0x7f020010;
+        public static final int normal=0x7f020011;
+        public static final int normal_wpn=0x7f020012;
+        public static final int powerful=0x7f020013;
+        public static final int rukia=0x7f020014;
+        public static final int subtile=0x7f020015;
+        public static final int subtile_wpn=0x7f020016;
+        public static final int ulquoirra=0x7f020017;
     }
     public static final class id {
-        public static final int accueil=0x7f080022;
-        public static final int btn_create=0x7f080010;
-        public static final int btn_multi=0x7f080013;
+        public static final int accueil=0x7f080025;
+        public static final int btn_create=0x7f080013;
+        public static final int btn_imgChar=0x7f080012;
+        public static final int btn_multi=0x7f080016;
         public static final int btn_normalAttack=0x7f080001;
-        public static final int btn_online=0x7f080014;
+        public static final int btn_online=0x7f080017;
         public static final int btn_powerfulAttack=0x7f080003;
-        public static final int btn_quit=0x7f080015;
-        public static final int btn_solo=0x7f080012;
+        public static final int btn_quit=0x7f080018;
+        public static final int btn_solo=0x7f080015;
         public static final int btn_subtileAttack=0x7f080002;
         public static final int createPlayer=0x7f08000b;
-        public static final int delete=0x7f080021;
+        public static final int delete=0x7f080024;
         public static final int editName=0x7f08000f;
-        public static final int howToPlay=0x7f080011;
+        public static final int howToPlay=0x7f080014;
         public static final int image1=0x7f080004;
         public static final int image2=0x7f080007;
         public static final int imageAdd=0x7f08000c;
+        public static final int imgCharacter=0x7f080011;
         public static final int listNames=0x7f08000d;
-        public static final int menu_settings=0x7f080020;
-        public static final int quitter=0x7f08001f;
-        public static final int stats_menu=0x7f080023;
+        public static final int menu_settings=0x7f080023;
+        public static final int quitter=0x7f080022;
+        public static final int stats_menu=0x7f080026;
+        public static final int txt_chooseImgChar=0x7f080010;
         public static final int txt_chooseName=0x7f08000e;
         public static final int txt_fight=0x7f080000;
         public static final int txt_hpJ1=0x7f080005;
         public static final int txt_hpJ2=0x7f080006;
-        public static final int txt_nbFights=0x7f080016;
-        public static final int txt_nbFights2=0x7f08001b;
-        public static final int txt_nbVic=0x7f080017;
-        public static final int txt_nbVic2=0x7f08001c;
-        public static final int txt_nbVicFollowed=0x7f080018;
-        public static final int txt_nbVicFollowed2=0x7f08001d;
-        public static final int txt_nbVicFollowedRec=0x7f080019;
-        public static final int txt_nbVicFollowedRec2=0x7f08001e;
+        public static final int txt_nbFights=0x7f080019;
+        public static final int txt_nbFights2=0x7f08001e;
+        public static final int txt_nbVic=0x7f08001a;
+        public static final int txt_nbVic2=0x7f08001f;
+        public static final int txt_nbVicFollowed=0x7f08001b;
+        public static final int txt_nbVicFollowed2=0x7f080020;
+        public static final int txt_nbVicFollowedRec=0x7f08001c;
+        public static final int txt_nbVicFollowedRec2=0x7f080021;
         public static final int txt_player=0x7f08000a;
-        public static final int txt_player2=0x7f08001a;
+        public static final int txt_player2=0x7f08001d;
         public static final int txt_results=0x7f080008;
         public static final int txt_resultsFight=0x7f080009;
     }
@@ -69,9 +82,10 @@ public final class R {
         public static final int activity_choose=0x7f030001;
         public static final int activity_creation=0x7f030002;
         public static final int activity_how_to_play=0x7f030003;
-        public static final int activity_mode=0x7f030004;
-        public static final int activity_stats=0x7f030005;
-        public static final int arena=0x7f030006;
+        public static final int activity_imagechar=0x7f030004;
+        public static final int activity_mode=0x7f030005;
+        public static final int activity_stats=0x7f030006;
+        public static final int arena=0x7f030007;
     }
     public static final class menu {
         public static final int activity_choose=0x7f070000;
@@ -83,11 +97,13 @@ public final class R {
         public static final int menu=0x7f070006;
     }
     public static final class raw {
-        public static final int twilight=0x7f040000;
+        public static final int phenom=0x7f040000;
+        public static final int twilight=0x7f040001;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
         public static final int btn_create=0x7f050013;
+        public static final int btn_imgChar=0x7f05001d;
         public static final int btn_multi=0x7f050004;
         public static final int btn_normalAttack=0x7f050015;
         public static final int btn_online=0x7f050006;
@@ -99,6 +115,7 @@ public final class R {
         public static final int hello_world=0x7f050001;
         public static final int howToPlay=0x7f05001c;
         public static final int menu_settings=0x7f050002;
+        public static final int txt_chooseImgChar=0x7f05001e;
         public static final int txt_chooseName=0x7f050011;
         public static final int txt_fight=0x7f050014;
         public static final int txt_hpJ1=0x7f050018;

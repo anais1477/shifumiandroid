@@ -17,12 +17,14 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class CreationActivity extends Activity {
 	private String nameJ1;
 	private String nameJ2;
+	private String imgCharacter;
 
 	
 	private OnClickListener createJoueur = new View.OnClickListener() {
@@ -136,7 +138,9 @@ public class CreationActivity extends Activity {
 		TextView vue1 = (TextView)findViewById(R.id.txt_player);
 	    vue1.setText(title);
 	    
-		
+	    ImageView image = (ImageView)findViewById(R.id.imgCharacter);
+        image.setImageResource(R.drawable.ichigo);
+        
 		Button ok = (Button) findViewById(R.id.btn_create);
 		ok.setOnClickListener(createJoueur);
 	}
